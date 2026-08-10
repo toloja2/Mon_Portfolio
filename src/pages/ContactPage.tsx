@@ -22,8 +22,8 @@ function ContactPage() {
               <h2 className={`text-2xl font-bold mb-4 ${isDark ? 'text-white' : 'text-gray-800'}`}>
                 📍 Coordonnées
               </h2>
-              <div className={`p-4 rounded-xl border flex items-center gap-4 transition-colors duration-300 ${
-                isDark ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'
+              <a href='mailto:tolojanahary.ranarijaonina@univ-antananarivo.mg' target='_blank'  className={`p-4 rounded-xl border flex items-center gap-4 animate-fade-up opacity-0 duration-500 hover:ring-1 hover:ring-orange-200 ${
+                isDark ? 'bg-gray-800 border-gray-700' : 'bg-gray-100 border-gray-200'
               }`}>
                 <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl">
                   <FaEnvelope />
@@ -31,12 +31,12 @@ function ContactPage() {
                 <div>
                   <p className={`text-xs ${isDark ? 'text-gray-400' : 'text-gray-400'}`}>Email</p>
                   <p className={`font-medium ${isDark ? 'text-white' : 'text-gray-800'}`}>
-                    tolojaranarijaonina2@gmail.com
+                    tolojanahary.ranarijaonina@univ-antananarivo.mg
                   </p>
                 </div>
-              </div>
-              <div className={`p-4 rounded-xl border flex items-center gap-4 transition-colors duration-300 ${
-                isDark ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'
+              </a>
+              <a href='tel:+261342072760' target='_blank' className={`p-4 rounded-xl border flex items-center gap-4  duration-500 animate-fade-up-delay-1 opacity-0 hover:ring-1 hover:ring-orange-200 ${
+                isDark ? 'bg-gray-800 border-gray-700' : 'bg-gray-100 border-gray-200'
               }`}>
                 <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xl">
                   <FaPhone />
@@ -47,9 +47,9 @@ function ContactPage() {
                     +261 34 20 727 60
                   </p>
                 </div>
-              </div>
-              <div className={`p-4 rounded-xl border flex items-center gap-4 transition-colors duration-300 ${
-                isDark ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'
+              </a>
+              <a href='https://www.google.com/maps/search/?api=1&query=CUR+Ankatso+II+Antananarivo+Madagascar' rel='noopener noreferrer' target='_blank' className={`p-4 rounded-xl border flex items-center gap-4 duration-500 animate-fade-up-delay-2 opacity-0 transition-transform hover:ring-1 hover:ring-orange-200 ${
+                isDark ? 'bg-gray-800 border-gray-700' : 'bg-gray-100 border-gray-200'
               }`}>
                 <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 text-xl">
                   <FaMapMarkerAlt />
@@ -60,7 +60,7 @@ function ContactPage() {
                     Ankatso II, Antananarivo
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
 
             {/* Formulaire */}
@@ -73,26 +73,29 @@ function ContactPage() {
               <form>
                 <input
                   type="text"
+                  required
                   placeholder="Votre nom"
-                  className={`w-full p-3 border rounded-lg mb-3 focus:outline-none focus:border-blue-500 transition-colors ${
+                  className={`animate-fade-up opacity-0 w-full p-3 border rounded-lg mb-3 focus:outline-none focus:border-blue-500 transition-colors animate-fade-in-fast ${
                     isDark ? 'bg-gray-700 border-gray-600 text-white placeholder-gray-400' : 'bg-white border-gray-300'
                   }`}
                 />
                 <input
                   type="email"
+                  required
                   placeholder="Votre email"
-                  className={`w-full p-3 border rounded-lg mb-3 focus:outline-none focus:border-blue-500 transition-colors ${
+                  className={`animate-fade-up opacity-0 w-full p-3 border rounded-lg mb-3 focus:outline-none focus:border-blue-500 transition-colors animate-fade-in-fast ${
                     isDark ? 'bg-gray-700 border-gray-600 text-white placeholder-gray-400' : 'bg-white border-gray-300'
                   }`}
                 />
                 <textarea
                   rows={5}
                   placeholder="Votre message"
-                  className={`w-full p-3 border rounded-lg mb-3 focus:outline-none focus:border-blue-500 transition-colors resize-none ${
+                  required
+                  className={`animate-fade-up-delay-1 opacity-0 w-full p-3 border rounded-lg mb-3 focus:outline-none focus:border-blue-500 transition-colors resize-none animate-fade-in ${
                     isDark ? 'bg-gray-700 border-gray-600 text-white placeholder-gray-400' : 'bg-white border-gray-300'
                   }`}
                 />
-                <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 flex items-center justify-center gap-2">
+                <button className="animate-fade-up-delay-2 opacity-0 w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 flex items-center justify-center gap-2 animate-fade-in-slow">
                   Envoyer <FaPaperPlane />
                 </button>
               </form>

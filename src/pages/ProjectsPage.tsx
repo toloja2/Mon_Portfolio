@@ -29,7 +29,7 @@ function ProjectsPage() {
   ];
 
   return (
-    <div className={`min-h-screen pt-20 transition-colors duration-300 ${
+    <div className={`min-h-screen pt-20 transition-colors duration-300 animate-fade-in ${
       isDark ? 'bg-gray-900' : 'bg-gray-50'
     }`}>
       <div className="container mx-auto px-4 py-12">

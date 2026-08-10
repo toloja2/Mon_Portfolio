@@ -21,14 +21,14 @@ function Navbar() {
 
   return (
     <nav className={`fixed w-full p-4 z-50 border-b transition-colors duration-300 ${
-      isDark ? 'bg-gray-900 border-gray-700' : 'bg-white border-gray-100'
+      isDark ? 'bg-gray-900 border-gray-700' : 'bg-gray-100 border-gray-100'
     }`}>
       <div className="container mx-auto flex justify-between items-center">
         
         <Link to="/" className={`text-2xl font-bold transition-colors duration-300 ${
           isDark ? 'text-white' : 'text-gray-800'
         }`}>
-          <span className="text-blue-600">&lt;</span>Tolo<span className="text-blue-600">/&gt;</span>
+          <span className="text-blue-600">&lt;</span>Toloja<span className="text-blue-600">/&gt;</span>
         </Link>
 
         {/* Menu Desktop */}
@@ -37,7 +37,7 @@ function Navbar() {
             <Link
               key={item.to}
               to={item.to}
-              className={`flex items-center gap-1 text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 text-sm font-medium transition-colors hover:scale-110 ${
                 isDark ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'
               }`}
             >
@@ -47,7 +47,7 @@ function Navbar() {
 
           <button
             onClick={toggleTheme}
-            className={`p-2 rounded-full transition-colors ${
+            className={`p-2 rounded-full transition-colors hover:scale-110 ${
               isDark ? 'bg-gray-700 text-yellow-400 hover:bg-gray-600' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
           >
@@ -59,7 +59,7 @@ function Navbar() {
         <div className="flex items-center gap-3 md:hidden">
           <button
             onClick={toggleTheme}
-            className={`p-2 rounded-full transition-colors ${
+            className={`p-2 rounded-full transition-colors hover:scale-110 ${
               isDark ? 'bg-gray-700 text-yellow-400 hover:bg-gray-600' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
           >
@@ -72,7 +72,7 @@ function Navbar() {
               isDark ? 'text-white hover:bg-gray-700' : 'text-gray-600 hover:bg-gray-100'
             }`}
           >
-            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            {isMenuOpen ? <FaTimes size={20} color='red'/> : <FaBars size={20}/>}
           </button>
         </div>
       </div>

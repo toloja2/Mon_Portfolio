@@ -2,11 +2,13 @@ import type { Project, Certification, Skill } from "../types";
 
 export const userInfo = {
   name: "RANARIJAONINA Tolojanahary",
-  title: "Étudiant en M1 Mathématiques & Informatique",
+  parcours: "Étudiant Mathématiques & Informatique",
+  grade : "Master 1",
+  university: "Université d'Antananarivo",
   email: "tolojanahary.ranarijaonina@univ-antananarivo.mg",
   phone: "+261 34 20 727 60",
-  location: "Ankatso II, Antananarivo",
-  bio: "Passionné par le mariage entre les mathématiques appliquées et les technologies modernes."
+  location: "CUR Ankatso II Antananarivo Madagascar",
+  bio: "Passionné par les mathématiques appliquées comme les Probabilités Statistiques, Algorithmes, Analyse des données, ect...; et en Informatique comme programmation, developpement web etc..."
 };
 
 export const projects: Project[] = [

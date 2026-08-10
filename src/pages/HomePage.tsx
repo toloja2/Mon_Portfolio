@@ -5,7 +5,7 @@ import Certifications from '../components/Certifications';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 
-function Home() {
+function HomePage () {
   return (
     <div className="animate-fade-in">
       <Hero />
@@ -18,4 +18,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;
