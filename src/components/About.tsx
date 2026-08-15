@@ -26,11 +26,14 @@ function About() {
           <div className={`p-8 rounded-2xl border transition-transform duration-300 hover:scale-105 ease-in-out ${
             isDark ? 'bg-gray-700/50 border-gray-600' : 'bg-blue-50 border-blue-100'
           }`}>
-            <p className={`text-lg text-center transition-colors duration-300  ${
+            <p className={`text-lg transition-colors duration-300  ${
               isDark ? 'text-gray-300' : 'text-gray-700'
             }`}>
-              Je suis étudiant en double Master :  <span className='text-blue-600 font-semibold text-xl'>{userInfo.grade} </span> Mathématiques Algorithmique Finance
-              et <span className='text-blue-600 font-semibold text-xl'>{userInfo.grade} </span>Mathématiques Informatique à l'Université d'Antananarivo.
+              Je suis actuellement étudiant en double Master dans le domaine <span className="font-bold">Mathématiques et Inforrmatique</span> à l'Université d'Antananarivo.
+              <ul className="mt-2">
+                <li> <span className='text-blue-600 font-semibold text-xl'>{userInfo.grade} </span>en Mathématiques Algorithmique Finance et Informatique </li>
+                <li> <span className='text-blue-600 font-semibold text-xl'>{userInfo.grade} </span>en Calcul Numérique </li>
+              </ul>
             </p>
           </div>
           
@@ -47,7 +50,7 @@ function About() {
             <a href={`tel:${userInfo.phone}`} target='_blank' className={`p-4 rounded-xl border flex items-center gap-3 transition-transform duration-300 hover:ring-1 hover:ring-orange-200 hover:scale-105 ${
               isDark ? 'bg-gray-700/50 border-gray-600' : 'bg-gray-100 border-gray-200'
             }`}>
-              <span className="text-2xl"><FaPhone /></span>
+              <span className={`text-2xl`}><FaPhone color={`${isDark ?  "white" : "grey"}`}/></span>
               <div>
                 <p className={`text-xs ${isDark ? 'text-gray-400' : 'text-gray-400'}`}>Téléphone</p>
                 <p className={`text-sm font-medium ${isDark ? 'text-gray-200' : 'text-gray-700'}`}>{userInfo.phone}</p>

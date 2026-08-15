@@ -12,8 +12,8 @@ export interface Certification {
   id: number;
   name: string;
   issuer: string;
-  date: string;
   icon: string;
+  date?: string;
   credentialLink?: string;
 }
 

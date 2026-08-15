@@ -41,11 +41,11 @@ function Hero() {
           }`}>
             {userInfo.bio}
           </p>
-          <div className="flex gap-4 mt-8 animate-fade-up-delay-3 opacity-0">
+          <div className="flex gap-4 mt-8 animate-fade-up-delay-3 opacity-0 cursor-pointer">
             <Link to="/about" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 hover:scale-105 duration-300 text-white font-semibold rounded-lg">
               À propos
             </Link>
-            <Link to="/projects" className={`px-8 py-3 border-2 font-semibold rounded-lg hover:scale-105 duration-300 ${
+            <Link to="/projects" className={`px-8 py-3 border-2 cursor-pointer font-semibold rounded-lg hover:scale-105 duration-300 ${
               isDark ? 'border-blue-400 text-blue-400 hover:bg-blue-400/10' : 'border-blue-600 text-blue-600 hover:bg-blue-50'
             }`}>
               Projets

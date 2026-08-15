@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';  // ← Link au lieu de <a>
+import { Link } from 'react-router-dom'; 
 import { FaHome, FaUser, FaTools, FaProjectDiagram, FaEnvelope, FaMoon, FaSun, FaBars, FaTimes } from 'react-icons/fa';
 import { useTheme } from '../context/ThemeContext';
+import photo_profil from "../assets/profil.jpeg"
 
 function Navbar() {
   const { isDark, toggleTheme } = useTheme();
@@ -24,12 +25,14 @@ function Navbar() {
       isDark ? 'bg-gray-900 border-gray-700' : 'bg-gray-100 border-gray-100'
     }`}>
       <div className="container mx-auto flex justify-between items-center">
-        
-        <Link to="/" className={`text-2xl font-bold transition-colors duration-300 ${
+        <Link to="/" className="mx-20 hover:scale-105 duration-300 transition-transform">
+          <img src = {photo_profil} className = " w-10 h-10 md:w-20 md:h-20 rounded-full cursor-pointer" alt="photo_profil" title="tolojanahary.ranarijaonina@univ-antananarivo.mg"  />
+        </Link> 
+        {/* <Link to="/" className={`text-2xl font-bold transition-colors duration-300 ${
           isDark ? 'text-white' : 'text-gray-800'
         }`}>
           <span className="text-blue-600">&lt;</span>Toloja<span className="text-blue-600">/&gt;</span>
-        </Link>
+        </Link> */}
 
         {/* Menu Desktop */}
         <div className="hidden md:flex items-center gap-6">

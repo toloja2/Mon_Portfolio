@@ -12,7 +12,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 // 3. Créer le Provider
 export function ThemeProvider({ children }: { children: ReactNode }) {
   // État du mode nuit
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   // Fonction pour basculer le mode
   const toggleTheme = () => {
